@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
                     usersRef.add(user)
                             .addOnSuccessListener(documentReference -> {
-                                Log.d("Firestore", "Usuário adicionado: " + documentReference.getId());
+                                //Log.d("Firestore", "Usuário adicionado: " + documentReference.getId());
                                 editTextName.setText(""); // Limpar campo
                             })
                             .addOnFailureListener(e -> Log.w("Firestore", "Erro ao adicionar usuário", e));
